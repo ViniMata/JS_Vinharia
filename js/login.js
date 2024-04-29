@@ -15,7 +15,7 @@ function verificarLogin(){
         window.location.href = "/html/pagCompras.html"
     } else if (login === "caiotech" && senha === "corinthians")  {
         redirecionarParaYoutube();
-    }else {
+    } else {
         exibirTextoNaTela("p", "Login errado")
     }
 }
