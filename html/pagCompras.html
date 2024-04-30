@@ -14,20 +14,21 @@
     <a href="vinho1.html">Comprar</a>
     <img src="imgs/bottiglia-0014sangiovanni-dellasalajpg-636x636.jpg" alt="Vinho Orvieto" width="200px">
     <a href="vinho2.html">Comprar</a> </div>
-
-    <form id="contactForm">
-        <input type="text" id="name" placeholder="Nome" required>
-        <input type="tel" id="phone" placeholder="Telefone" required>
-        <input type="email" id="email" placeholder="Email" required>
-        <textarea id="message" placeholder="Mensagem" required></textarea>
-        <button type="submit">Enviar</button>
-    </form>
-    
-    <div class="success-message" id="successMessage">Mensagem enviada com sucesso!</div>
-    <label for="cupom">Digite o cupom de desconto:</label>
-    <input type="text" id="cupom">
-    <button onclick="aplicarDesconto()">Aplicar</button>
-
+    <div>
+        <form id="contactForm">
+            <input type="text" id="name" placeholder="Nome" required>
+            <input type="tel" id="phone" placeholder="Telefone" required>
+            <input type="email" id="email" placeholder="Email" required>
+            <textarea id="message" placeholder="Mensagem" required></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+        <div class="success-message" id="successMessage">Mensagem enviada com sucesso!</div>
+    </div>
+    <div class="cupom">
+        <label for="cupom">Digite o cupom de desconto:</label>
+        <input type="text" id="cupom">
+        <button onclick="aplicarDesconto()">Aplicar</button>
+    </div>
     <script>
         function aplicarDesconto() {
             var cupomInput = document.getElementById("cupom").value;
