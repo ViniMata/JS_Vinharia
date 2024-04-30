@@ -24,6 +24,20 @@
     </form>
     
     <div class="success-message" id="successMessage">Mensagem enviada com sucesso!</div>
+    <label for="cupom">Digite o cupom de desconto:</label>
+    <input type="text" id="cupom">
+    <button onclick="aplicarDesconto()">Aplicar</button>
+
+    <script>
+        function aplicarDesconto() {
+            var cupomInput = document.getElementById("cupom").value;
+            if (cupomInput === "FIAP2024") {
+                alert("Cupom aplicado com sucesso. Desconto de 10% aplicado.");
+            } else {
+                alert("Cupom inválido.");
+            }
+        }
+    </script>
     
 </body>
 </html>
