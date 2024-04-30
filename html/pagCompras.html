@@ -11,6 +11,22 @@
     <a href="vinho1.html">Comprar</a>
     <img src="imgs/bottiglia-0014sangiovanni-dellasalajpg-636x636.jpg" alt="Vinho Orvieto" width="200px">
     <a href="vinho2.html">Comprar</a>
-    
+
+    <br><br>
+
+    <label for="cupom">Digite o cupom de desconto:</label>
+    <input type="text" id="cupom">
+    <button onclick="aplicarDesconto()">Aplicar</button>
+
+    <script>
+        function aplicarDesconto() {
+            var cupomInput = document.getElementById("cupom").value;
+            if (cupomInput === "FIAP2024") {
+                alert("Cupom aplicado com sucesso. Desconto de 10% aplicado.");
+            } else {
+                alert("Cupom inválido.");
+            }
+        }
+    </script>
 </body>
 </html>
