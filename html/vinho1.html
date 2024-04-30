@@ -9,9 +9,15 @@
     <img src="imgs/0-10269-636x636.jpg" alt="Vinho Barbaresco" width="200px">
     <h1>Barbaresco DOCG Prunotto 2017</h1>
     <h3>R$527,11</h3>
+    <form id="comprar">
+        <button type="button" onclick="adicionarAoCarrinho()">Adicionar ao carrinho</button>
+        <h2>Carrinho:</h2>
+        <ul id="carrinho"></ul>
+        <h2>Total:</h2>
+        <ul id="total"></ul>
+    </form>
+    <script src="/js/comprar_v1.js"></script>
     <h2>Comentarios:</h2>
-    
-    
     <form id="commentForm">
         <label for="name">Nome:</label>
         <input type="text" id="name" name="name" required><br>
@@ -21,7 +27,7 @@
     </form>
     <div id="comements"></div
     
-    <script src="/js/comentarios.js">
+    <script src="/js/comentarios.js"></script>
     <a href="">Sugestões para esse vinho</a>
 </body>
 </html>
