@@ -4,13 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Agnello</title>
+    <link rel="stylesheet" href="/css/formulario.css">
+    <script src="/js/formulario.js"></script>
 </head>
 <body>
-    <h1>Vinhos</h1>
+   <div class="imagens">
+   <h1>Vinhos</h1>
     <img src="imgs/0-10269-636x636.jpg" alt="Vinho Barbaresco" width="200px">
     <a href="vinho1.html">Comprar</a>
     <img src="imgs/bottiglia-0014sangiovanni-dellasalajpg-636x636.jpg" alt="Vinho Orvieto" width="200px">
-    <a href="vinho2.html">Comprar</a>
+    <a href="vinho2.html">Comprar</a> </div>
+
+    <form id="contactForm">
+        <input type="text" id="name" placeholder="Nome" required>
+        <input type="tel" id="phone" placeholder="Telefone" required>
+        <input type="email" id="email" placeholder="Email" required>
+        <textarea id="message" placeholder="Mensagem" required></textarea>
+        <button type="submit">Enviar</button>
+    </form>
+    
+    <div class="success-message" id="successMessage">Mensagem enviada com sucesso!</div>
     
 </body>
 </html>
